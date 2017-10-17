@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<center><h1> Wybierz plik </h1></center>
+<br/>
+
+<form th:action="@{/}" enctype="multipart/form-data" method="post">
+    <input type="file" name="file">
+    <input type="submit" value="Wyślij">
+</form>
+
+</body>
+</html>
